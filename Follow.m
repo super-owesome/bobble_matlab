@@ -7,6 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 LoadBobbleMessages();
 handles = InitBobbleSimConnection()
+ActivateBobbleBot(handles.cmdBbPub);
 % Configure blue ball param gains for ball recognition
 blueBallParams.blueMax = 30; % Max deviation from pure blue
 blueBallParams.darkMin = 90; % Min darkness value

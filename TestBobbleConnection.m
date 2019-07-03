@@ -8,6 +8,7 @@ handles = InitBobbleSimConnection()
 pause(0.25);
 ActivateBobbleBot(handles.cmdBbPub);
 pause(0.25);
+velMsg = rosmessage(handles.velPub);
 velMsg.Linear.X = 0.25; send(handles.velPub, velMsg);
 pause(1.5);
 velMsg.Linear.X = -0.25; send(handles.velPub, velMsg);
